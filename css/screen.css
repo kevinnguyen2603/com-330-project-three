@@ -149,8 +149,6 @@ p{
   background: #444;
   color: #eee;
   padding: 0.6111111111em;
-
-
 }
 #covid-19{
   grid-column-start:1;
@@ -169,9 +167,13 @@ p{
 }
 #footer{
   background: #FFFFFF;
-  padding: 50px 0;
+  padding: 20px 0;
   text-align: center;
   margin-top: 1.2222222222em;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 539px) {

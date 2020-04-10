@@ -53,6 +53,31 @@ p{
   padding-bottom: 1.22222222em;/* 22px / 18px = result*/
 }
 
+/*Navigation Styles*/
+.nav a{
+  background: #600;
+  border: 1px solid;
+  color: #EEE;
+  display: block;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  margin-bottom: 6px;
+}
+
+#nav-skills #skills-page,
+.nav a:hover,
+.nav a:active,
+.nav a:focus{
+  color: #600;
+  background: #EEE;
+}
+
+#nav-skills #skills-page{
+  cursor: default;
+}
+
 /* Layout */
 .headline{
   text-align: center;
@@ -153,6 +178,7 @@ p{
   .photo{
     width: 70%;
   }
+
   #introduction h2{
     /* text-align: center; */
     flex: 1 100%;
@@ -179,6 +205,19 @@ p{
 @media screen and (min-width: 540px) {
   .photo{
     width: 80%;
+  }
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: -6px;
+    margin-right: 6px;
+  }
+  .nav li{
+    flex: 1 0 auto;
+    margin-left: 12px;
+  }
+  .nav a{
+    border-radius: 30px;
   }
   #introduction h2{
     flex: 1 100%;

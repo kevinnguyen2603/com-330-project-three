@@ -290,7 +290,7 @@ p{
 
 @media screen and (min-width:686px) {
   .resume {
-    font-size: 1.563em;
+    font-size: 1em;
   }
   #about-me h2, #introduction h2 {
     font-size: 2.441em;
@@ -339,6 +339,9 @@ p{
 }
 
 @media screen and (min-width: 1080px) {
+  .resume {
+    font-size: 1.25em;
+  }
   #about-me h2, #introduction h2 {
     font-size: 3.815em;
   }

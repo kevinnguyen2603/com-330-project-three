@@ -254,7 +254,7 @@ p{
 
 @media screen and (min-width:0px){
   #home-page h1{
-    font-size: 3.815em;
+    font-size: 1.953em;
   }
   .resume {
     font-size: 0.833em;
@@ -291,6 +291,9 @@ p{
 @media screen and (min-width:686px) {
   .resume {
     font-size: 1em;
+  }
+  #home-page h1{
+    font-size: 3.815em;
   }
   #about-me h2, #introduction h2 {
     font-size: 2.441em;

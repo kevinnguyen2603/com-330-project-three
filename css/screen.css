@@ -143,7 +143,7 @@ p{
 /* Layout */
 .headline{
   text-align: center;
-  font-weight: center;
+  font-weight: bold;
   padding: 10px;
   font-size: 1.125em;
   margin: auto;

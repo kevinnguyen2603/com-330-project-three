@@ -74,10 +74,10 @@ p{
 }
 /*page title for h2*/
 #about-me h2, #introduction h2 {
-  font-size: 3.815em;
   font-family: 'Cabin', sans-serif,Helvetica;
   padding: 0.3333333333em;
   color: #847A76;
+
 }
 
 /* Resume Page */
@@ -93,6 +93,7 @@ p{
 
 }
 .resume h2,h3,li{
+  line-height: 1.22222222em;
   letter-spacing: .025em;
   text-transform: lowercase;
   font-variant-caps: small-caps;
@@ -249,38 +250,51 @@ p{
 ;
 }
 
-@media screen and (max-width: 539px) {
-  .photo{
-    width: 70%;
-  }
 
+
+@media screen and (min-width:0px){
+  #home-page h1{
+    font-size: 1.953em;
+  }
+  .resume {
+    font-size: 0.833em;
+  }
+  /*page title for h2*/
+  #about-me h2, #introduction h2 {
+    font-size: 1.563em;
+  }
+  .photo{
+    width: 80%;
+  }
   #introduction h2{
-    /* text-align: center; */
     flex: 1 100%;
     margin-bottom: 0.6111111111em;
   }
-  #covid-19{
+  #box1{
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start:2;
   }
-  #hobbies{
+  #box2{
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start:3;
   }
-  #career {
+  #box3{
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start:4;
   }
-  #home-page h1{
-    font-size: 1.953em;
-  }
+
 }
 
-/* State Styles */
-@media screen and (min-width: 540px) {
+@media screen and (min-width:686px) {
+  .resume {
+    font-size: 1.563em;
+  }
+  #about-me h2, #introduction h2 {
+    font-size: 2.441em;
+  }
   .photo{
     width: 80%;
   }
@@ -293,29 +307,6 @@ p{
   .nav li{
     flex: 1 0 auto;
   }
-
-  #introduction h2{
-    flex: 1 100%;
-    margin-bottom: 0.6111111111em;
-  }
-  #covid-19{
-    grid-column-start:1;
-    grid-column-end: 4;
-    grid-row-start:2;
-  }
-  #hobbies{
-    grid-column-start:1;
-    grid-column-end: 4;
-    grid-row-start:3;
-  }
-  #career {
-    grid-column-start:1;
-    grid-column-end: 4;
-    grid-row-start:4;
-  }
-}
-
-@media screen and (min-width: 900px) {
   #introduction figure{
     flex: .1 0 40%;
     min-width: 30%;
@@ -328,25 +319,48 @@ p{
     flex: 1 100%;
     margin-bottom: 0.6111111111em;
   }
-  #covid-19{
+  #box1{
     grid-column-start:1;
-    grid-column-end: 1;
+    grid-column-end: 4;
     grid-row-start:2;
   }
-  #hobbies{
-    grid-column-start:2;
-    grid-column-end: 2;
-    grid-row-start:2;
+  #box2{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:3;
   }
-  #career {
-    grid-column-start:3;
-    grid-column-end: 3;
-    grid-row-start:2;
+  #box3{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:4;
   }
+
 
 }
 
 @media screen and (min-width: 1080px) {
+  #about-me h2, #introduction h2 {
+    font-size: 3.815em;
+  }
+  #introduction h2{
+    flex: 1 100%;
+    margin-bottom: 0.6111111111em;
+  }
+  #box1{
+    grid-column-start:1;
+    grid-column-end: 1;
+    grid-row-start:2;
+  }
+  #box2{
+    grid-column-start:2;
+    grid-column-end: 2;
+    grid-row-start:2;
+  }
+  #box3 {
+    grid-column-start:3;
+    grid-column-end: 3;
+    grid-row-start:2;
+  }
   #page-cover{
     font-size: 1.953em;
   }

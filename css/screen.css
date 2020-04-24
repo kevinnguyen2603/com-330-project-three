@@ -12,7 +12,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Base Styles*/
 /*Base Styles*/
 html{
-  font-family: 'Roboto',Helvetica, Arial,sans-serif;
+  font-family: 'Old Standard TT',Helvetica, Arial,sans-serif;
   font-size: 1.125em; /*16px = 1em (target (18px) / context (16px) = result) */
   padding: 1.22222222em 1.83333333em; /* 33px / 18px = 1.83333333em */
   line-height: 1.2515644556em;
@@ -27,14 +27,13 @@ body{
 }
 h1{
   display:block;
-  font-family: 'Fire Sans',Helvetica, sans-serif;
+  font-family: 'Old Standard TT',Helvetica, sans-serif;
   font-size: 1.9531111111em; /*35.156px /18px = 1.953em*/
   line-height: 1.2515644556em; /* 44 / 35.156 = 1.2515644556 */
-
 }
 b{
   display:block;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Old Standard TT', sans-serif;
 }
 h2{
   font-size: 1.563em;
@@ -53,28 +52,90 @@ p{
   padding-bottom: 1.22222222em;/* 22px / 18px = result*/
 }
 
+/* Home Page */
+/* .home-page {
+  background-image: url('../images/home.JPG');
+  height: 100%;
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+#home-page h1{
+  color:#8C4D5E;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold;
+  font-size: 3.9062222222em;
+  line-height: 1.22222222em;
+}
+
+#home-page h1,nav{
+  padding: 1.22222222em;
+}
+/*page title for h2*/
+#about-me h2, #introduction h2 {
+  font-size: 3.815em;
+  font-family: 'Cabin', sans-serif,Helvetica;
+  padding: 0.3333333333em;
+  color: #847A76;
+}
+
+/* Resume Page */
+.resume h2, h3{
+  text-align: left;
+  font-weight: bold;
+  display: block;
+}
+
+.resume li{
+  padding-left: 24px;
+  text-indent: -24px;
+
+}
+.resume h2,h3,li{
+  letter-spacing: .025em;
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
+  padding: 0.3333333333em 0 0.3333333333em 0;
+}
+.resume b{
+  color: #90757f;
+  margin-left: 1.22222222em;
+  display: inline-block;
+}
+
+.resume article{
+  margin-bottom: 1.22222222em;
+}
+
+#softskill li, #hardskill li , #about-me li{
+  list-style-type:disc;
+}
+
+
 /*Navigation Styles*/
 .nav a{
-  background: #600;
-  border: 1px solid;
-  color: #EEE;
+  background: #A68D85;
+  color: #0D0D0D;
   display: block;
   line-height: 0;
   text-align: center;
   text-decoration: none;
-  padding: 20px;
+  padding: 24px;
   margin-bottom: 6px;
 }
 
-#nav-skills #skills-page,
+#home-page #nav-home,#about-page #nav-about,
+#career-page #nav-career, #contact-page #nav-contact,
+#resume-page #nav-resume,
 .nav a:hover,
 .nav a:active,
 .nav a:focus{
-  color: #600;
-  background: #EEE;
+  color: #0D0D0D;
+  background: #E9ECF2;
 }
 
-#nav-skills #skills-page{
+#nav-skills, #skills-page{
   cursor: default;
 }
 
@@ -93,7 +154,7 @@ p{
 
 
 .photo{
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 	margin-bottom: 1.2222222222em; /* 22px / 18px = result*/
@@ -123,44 +184,58 @@ p{
   grid-column-end: 4;
   grid-row-start: 1;
 }
-
+/*Career Page*/
 #about-me{
   display:grid;
   font-size: 1.125em;
-  /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
-  grid-template-columns: repeat(3,1fr)
+  grid-template-columns: repeat(3,1fr);
   grid-template-rows: auto;
-  /* grid-template-areas: "heading heading heading heading heading","covid-19", "hoobies", "career"; */
   grid-row-gap:2em;
   grid-column-gap:2em;
   line-height: 1.2515644556em;
   margin-top: 1.2222222222em;
   padding: 0.6111111111em;
 }
+/* #about-me h2{
+  color: #F2935C;
+} */
 #about-me h3{
-  font-weight: bold;
   margin-bottom: 0.6111111111em;
   border-bottom: 0.1527777778em solid #E6CEAE;
   border-width: thin;
+  color:#D9A689;
   border-radius: 10px;
   display: block;
+  text-align: center;
 }
-#covid-19, #hobbies, #career {
+#about-me h3,h4{
+  font-weight: bold;
+}
+#about-me li{
+  margin-left: 24px;
+  letter-spacing: .025em;
+  text-transform: lowercase;
+  font-variant-caps: small-caps;
+  padding: 0.6111111111em 0 0.6111111111em 0;
+
+}
+
+#box1, #box2, #box3 {
   background: #444;
-  color: #eee;
+  color: #F2F2F2;
   padding: 0.6111111111em;
 }
-#covid-19{
+#box1{
   grid-column-start:1;
   /* grid-column-end: 3; */
   grid-row-start:2;
 }
-#hobbies{
+#box2{
   grid-column-start:2;
   /* grid-column-end: 3; */
   grid-row-start:2;
 }
-#career {
+#box3{
   grid-column-start:3;
   /* grid-column-end: 3; */
   grid-row-start:2;
@@ -199,6 +274,9 @@ p{
     grid-column-end: 4;
     grid-row-start:4;
   }
+  #home-page h1{
+    font-size: 1.953em;
+  }
 }
 
 /* State Styles */
@@ -214,11 +292,8 @@ p{
   }
   .nav li{
     flex: 1 0 auto;
-    margin-left: 12px;
   }
-  .nav a{
-    border-radius: 30px;
-  }
+
   #introduction h2{
     flex: 1 100%;
     margin-bottom: 0.6111111111em;

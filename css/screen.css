@@ -95,8 +95,6 @@ p{
 .resume h2,h3,li{
   line-height: 1.22222222em;
   letter-spacing: .025em;
-  text-transform: lowercase;
-  font-variant-caps: small-caps;
   padding: 0.3333333333em 0 0.3333333333em 0;
 }
 .resume b{
@@ -109,7 +107,7 @@ p{
   margin-bottom: 1.22222222em;
 }
 
-#softskill li, #hardskill li , #about-me li{
+#softskill li, #hardskill li{
   list-style-type:disc;
 }
 
@@ -215,8 +213,6 @@ p{
 #about-me li{
   margin-left: 24px;
   letter-spacing: .025em;
-  text-transform: lowercase;
-  font-variant-caps: small-caps;
   padding: 0.6111111111em 0 0.6111111111em 0;
 
 }

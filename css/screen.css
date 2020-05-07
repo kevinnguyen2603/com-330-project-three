@@ -36,7 +36,7 @@ b{
   font-family: 'Old Standard TT', sans-serif;
 }
 h2{
-  font-size: 1.563em;
+  font-size: 1.25em;
   color: #591818;
 }
 h1,h2,h3{
@@ -75,8 +75,9 @@ p{
 /*page title for h2*/
 #about-me h2, #introduction h2 {
   font-family: 'Cabin', sans-serif,Helvetica;
-  padding: 0.3333333333em;
-  color: #847A76;
+  padding: 0.6111111111em;
+  color: #E0E0CC;
+  background-color: black;
 
 }
 

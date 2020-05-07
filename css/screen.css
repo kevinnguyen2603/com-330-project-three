@@ -105,7 +105,8 @@ p{
 }
 
 .resume article{
-  margin-bottom: 1.22222222em;
+  /* margin-bottom: 1.22222222em; */
+  border-bottom: 0.3055555556em double;/* 5.5px / 18px = 0.3055555556*/
 }
 
 #softskill li, #hardskill li, #content_bullet li{

@@ -107,7 +107,7 @@ p{
   margin-bottom: 1.22222222em;
 }
 
-#softskill li, #hardskill li{
+#softskill li, #hardskill li, #content_bullet li{
   list-style-type:disc;
 }
 

@@ -254,13 +254,33 @@ p{
 ;
 }
 
-
+.contact {
+  display:block;
+  text-align: center;
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20vw;
+}
+.contact h4{
+  color:#E82C1E;
+}
+.box{
+  display:inline-block;
+  border: thick double red;
+  padding: 0.6111111111em;
+  background-color: #FFC578;
+}
 
 @media screen and (min-width:0px){
   #home-page h1{
     font-size: 1.953em;
   }
-  .resume {
+
+  .contact{
+    padding: 10vw;
+  }
+  .resume .box {
     font-size: 0.833em;
   }
   /*page title for h2*/
@@ -293,7 +313,7 @@ p{
 }
 
 @media screen and (min-width:686px) {
-  .resume {
+  .resume{
     font-size: 1em;
   }
   #home-page h1{
@@ -318,6 +338,7 @@ p{
     flex: .1 0 20%;
     min-width: 20%;
   }
+
   #introduction article{
     flex: 1 0 70%;
     min-width: 50%;
@@ -348,6 +369,9 @@ p{
 @media screen and (min-width: 1080px) {
   .photo{
     width: 80%;
+  }
+  .box {
+    font-size: 1.25em;
   }
   .resume {
     font-size: 1.25em;
